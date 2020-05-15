@@ -90,4 +90,15 @@ public class ProductManager implements ProductAct {
             System.out.println("Not exit product's name!");
         }
     }
+
+    @Override
+    public void checkProductIsEmpty() {
+        System.out.println("The Product have total = 0. Please add them ");
+        productList=repository.productList;
+        for (int i=0; i<productList.size();i++){
+            if(productList.get(i).getTotal()==0){
+                productList.get(i).display();
+            }
+        }
+    }
 }

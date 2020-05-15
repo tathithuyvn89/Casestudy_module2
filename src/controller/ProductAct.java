@@ -10,4 +10,5 @@ public interface ProductAct {
     void sortProductByPriceDown(Category category);
     void deleteProductByID();
     void searchProductByName();
+    void checkProductIsEmpty();
 }

@@ -65,6 +65,9 @@ public class CompanyMemberUse {
                     productManager.searchProductByName();
                     break;
                 case 7:
+                    productManager.checkProductIsEmpty();
+                    break;
+                case 8:
                     System.out.println("Cam on ban da su dung chuong trinh cua chung toi");
                     break;
                 default:
@@ -82,7 +85,9 @@ public class CompanyMemberUse {
         System.out.println("4. Delete Product by ID ");
         System.out.println("5. Sort Product by Price ");
         System.out.println("6. SearchProduct by Name ");
-        System.out.println("7. Exit program ");
+        System.out.println("7. Check Product is Empty ");
+
+        System.out.println("8. Exit program ");
         System.out.println("Please choose one number, you want ");
     }
 }
